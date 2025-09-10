@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3ba0ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#0d1117"/>
+  <path d="M72 176c0-44.183 35.817-80 80-80h32" stroke="url(#g)" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="184" cy="96" r="14" fill="#3ba0ff"/>
+  <path d="M72 128c0-30.928 25.072-56 56-56h40" stroke="#8b5cf6" stroke-width="12" stroke-linecap="round"/>
+  <text x="84" y="208" fill="#e7edf3" font-family="Segoe UI, Roboto, Arial" font-size="20" font-weight="700">VIDYA</text>
+  <text x="84" y="228" fill="#a6b1bb" font-family="Segoe UI, Roboto, Arial" font-size="14">SIH 2025</text>
+  </svg>

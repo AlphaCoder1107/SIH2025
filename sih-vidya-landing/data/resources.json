@@ -1,0 +1,9 @@
+[
+  {"id":1,"title":"Team PPT Template","type":"pptx","url":"https://sih.gov.in/letters/SIH2025-IDEA-Presentation-Format.pptx","desc":"Standard presentation template for demos."},
+  {"id":2,"title":"Submission Guide","type":"pdf","url":"downloads/submission-guide.pdf","desc":"Checklist & video format instructions."},
+  {"id":3,"title":"Registration Form","type":"form","url":"https://forms.gle/2dmtEXVMzhF9rnvV8","desc":"Team registration form."},
+  {"id":4,"title":"SIH Official Portal","type":"url","url":"https://www.sih.gov.in/","desc":"Visit official Smart India Hackathon portal."},
+  {"id":5,"title":"Timeline PDF","type":"pdf","url":"https://sih.gov.in/#process-timeline","desc":"Key dates for internal selections."},
+  {"id":6,"title":"SIH Official Registration Form","type":"form","url":"https://www.sih.gov.in/letters/College-Authorization-letter-SIH2025.docx","desc":"Official SIH registration (external link)."},
+  {"id":7,"title":"SIH Registration PDF","type":"pdf","url":"https://sih.gov.in/letters/SIH2025-Registration-Guide.pdf","desc":"Official SIH registration instructions PDF."}
+]

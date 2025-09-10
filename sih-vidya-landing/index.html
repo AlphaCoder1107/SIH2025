@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart India Hackathon 2025 — Vidya University</title>
+    <meta name="description" content="Vidya University SIH 2025 internal selection — timelines, resources, updates, and teams gallery." />
+    <meta property="og:title" content="Smart India Hackathon 2025 — Vidya University" />
+    <meta property="og:description" content="Timelines, resources, updates, and teams gallery for Vidya University's SIH 2025." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="./assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Home">
+          <img src="./assets/images/logo.svg" alt="Vidya University Logo" width="36" height="36" />
+          <span>Vidya University — SIH 2025</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#updates">Updates</a>
+          <a href="#resources">Resources</a>
+          <a href="#teams">Teams</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-label="Hero">
+        <div class="container hero-inner">
+          <h1>Smart India Hackathon 2025</h1>
+          <p class="tag">Vidya University — Internal Selection Hub</p>
+          <p class="lead">Find timelines, templates, forms, and live updates in one place. Post-event, explore the teams gallery and winners.</p>
+          <div class="cta">
+            <a class="btn primary" href="#resources">Get Templates</a>
+            <a class="btn" href="https://www.sih.gov.in/" target="_blank" rel="noopener">Visit SIH Portal</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            Welcome to the central hub for Vidya University's internal Smart India Hackathon 2025 selections.
+            Here you’ll find everything you need to participate: announcements, key dates, official templates,
+            and submission guidance. The site is fast, accessible, and easy to maintain — editors can update
+            simple JSON files and the content refreshes automatically.
+          </p>
+          <ul>
+            <li>Stay updated with the latest announcements and workshop schedules.</li>
+            <li>Access one-click downloads for PPT templates and submission guides.</li>
+            <li>Complete registration via official forms and track important timelines.</li>
+            <li>After the event, browse the teams gallery and top winners.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="updates" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Updates & Timeline</h2>
+            <br>
+            <br><br><br><br>
+            <div class="filters">
+              <input id="updates-search" type="search" placeholder="Search updates..." aria-label="Search updates" />
+            </div>
+          </div>
+          <div id="updates-list" class="cards" aria-live="polite" aria-busy="true">
+            <p>Loading updates...</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Resources</h2>
+            <div class="filters">
+              <input id="resources-search" type="search" placeholder="Search resources..." aria-label="Search resources" />
+            </div>
+          </div>
+          <div id="resources-list" class="cards" aria-live="polite" aria-busy="true">
+            <p>Loading resources...</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="teams" class="section alt">
+        <div class="container">
+          <h2>Teams & Gallery</h2>
+          <p class="muted">This section will go live after the internal hackathon.</p>
+          <div id="teams-grid" class="grid" aria-live="polite" aria-busy="true"></div>
+        </div>
+      </section>
+
+      <section id="winners" class="winners section">
+        <div class="container">
+          <h2>Top Winners</h2>
+            <p class="muted">Congratulations to all participating teams! Winners will be announced post-event.</p>
+          <!-- <p class="muted">Large placeholders are provided — replace images later to showcase winners.</p> -->
+          <div class="winners-grid">
+            <article class="winner-card">
+              <img src="./assets/images/teams/placeholder.svg" alt="First Place placeholder" loading="lazy" />
+              <div class="body">
+                <div class="title">First Place</div>
+                <div class="place">🏆 To be announced</div>
+              </div>
+            </article>
+            <article class="winner-card">
+              <img src="./assets/images/teams/placeholder.svg" alt="Second Place placeholder" loading="lazy" />
+              <div class="body">
+                <div class="title">Second Place</div>
+                <div class="place">🥈 To be announced</div>
+              </div>
+            </article>
+            <article class="winner-card">
+              <img src="./assets/images/teams/placeholder.svg" alt="Third Place placeholder" loading="lazy" />
+              <div class="body">
+                <div class="title">Third Place</div>
+                <div class="place">🥉 To be announced</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container">
+          <h2>FAQ</h2>
+          <details>
+            <summary>Who can participate?</summary>
+            <p>All eligible Vidya University students can participate as per SIH guidelines. Form teams as per rules and consult your department coordinator if unsure.</p>
+          </details>
+          <details>
+            <summary>What are the key dates?</summary>
+            <p>Dates will be announced soon. Keep an eye on the Updates section for official announcements.</p>
+          </details>
+          <details>
+            <summary>How do we register our team?</summary>
+            <p>Use the Registration Form in Resources for internal submission. The SIH Official Registration Form will be listed when available.</p>
+          </details>
+          <details>
+            <summary>What should the proposal include?</summary>
+            <p>Follow the Submission Guide (Resources) for required sections: problem statement, solution approach, tech stack, team roles, and timelines.</p>
+          </details>
+          <details>
+            <summary>How will teams be evaluated internally?</summary>
+            <p>Evaluation will consider problem-fit, innovation, feasibility, demo readiness, and presentation quality. Details will be shared in updates.</p>
+          </details>
+          <details>
+            <summary>Where can I ask questions?</summary>
+            <p>Contact the SIH coordination cell at +91-8077310594 or reach your department coordinator.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <br>
+          <p>For queries, +91-8077310594 or reach your department coordinator.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Vidya University — SIH 2025. MIT-licensed template.</p>
+        <a class="top" href="#home" aria-label="Back to top">↑ Back to top</a>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+  </html>
