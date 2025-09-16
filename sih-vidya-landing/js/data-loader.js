@@ -24,21 +24,22 @@ export async function loadUpdates(query=''){
       container.innerHTML = '<p class="muted">No updates found.</p>';
       return;
     }
-    const ANNOUNCE_ONLY = true; // show placeholder and hide details as requested
-    const PLACEHOLDER_TEXT = 'Now Open for registrations!';
+      const ANNOUNCE_ONLY = true; // global toggle to hide dates/details
+      const PLACEHOLDER_TEXT = 'Allounced Soon';
     for(const it of items){
       const card = document.createElement('article');
-      card.className = 'card update-card';
+        const isHighlight = it.highlight === true;
+        card.className = 'card update-card' + (isHighlight ? ' highlight' : '');
       const pin = it.pinned? '<span class="chip" title="Pinned">📌 Pinned</span>' : '';
-      const link = (!ANNOUNCE_ONLY && it.link)? `<a class="btn" target="_blank" rel="noopener" href="${it.link}">Open</a>`: '';
+        const link = (!ANNOUNCE_ONLY && it.link)? `<a class="btn" target="_blank" rel="noopener" href="${it.link}">Open</a>`: '';
       card.innerHTML = `
         <div class="row">
           <h4>${it.title}</h4>
           ${pin}
         </div>
-        <time datetime="${it.date}">${ANNOUNCE_ONLY ? PLACEHOLDER_TEXT : new Date(it.date).toLocaleDateString()}</time>
-        ${ANNOUNCE_ONLY ? '' : `<p>${it.body||''}</p>`}
-        ${ANNOUNCE_ONLY ? '' : `<div class="row">${link}</div>`}
+          <time datetime="${it.date}">${(ANNOUNCE_ONLY && !isHighlight) ? PLACEHOLDER_TEXT : new Date(it.date).toLocaleDateString()}</time>
+          ${(ANNOUNCE_ONLY && !isHighlight) ? '' : `<p>${it.body||''}</p>`}
+          ${(ANNOUNCE_ONLY && !isHighlight) ? '' : `<div class="row">${link}</div>`}
       `;
       container.appendChild(card);
     }
