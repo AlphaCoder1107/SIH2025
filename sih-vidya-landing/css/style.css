@@ -80,7 +80,7 @@ body{
 .update-card .row:last-child{margin-top:auto}
 
 /* Attention highlight for urgent updates */
-.update-card.highlight{
+.cards .update-card.highlight{
   border-color: rgba(255,77,141,.6) !important;
   box-shadow: 0 12px 28px rgba(255,77,141,.18), 0 0 0 2px rgba(255,77,141,.18);
   animation: floatPulse 3s ease-in-out infinite;
