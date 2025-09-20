@@ -1,6 +1,6 @@
 [
   {"id":4,"date":"2025-09-18","title":"Submissions Closed","body":"Submissions are ended for 2025.","pinned":true, "highlight":true},
-  {"id":1,"date":"2025-08-20","title":"Registration Open","body":"Registration for internal SIH is now open. Deadline Sep 28, 2025.","pinned":true,
+  {"id":1,"date":"2025-08-20","title":"Registration Closed","body":"Registrations are closed.","pinned":true,
    "link":"https://forms.gle/your-google-form"},
   {"id":2,"date":"2025-09-15","title":"Mentor Workshop","body":"Free workshop on rapid prototyping on Sep 21.","pinned":false}
 ]

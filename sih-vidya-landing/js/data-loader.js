@@ -24,8 +24,7 @@ export async function loadUpdates(query=''){
       container.innerHTML = '<p class="muted">No updates found.</p>';
       return;
     }
-      const ANNOUNCE_ONLY = true; // global toggle to hide dates/details
-      const PLACEHOLDER_TEXT = 'Allounced Soon';
+  const ANNOUNCE_ONLY = true; // global toggle to hide dates/details
     for(const it of items){
       const card = document.createElement('article');
         const isHighlight = it.highlight === true;
@@ -37,7 +36,7 @@ export async function loadUpdates(query=''){
           <h4>${it.title}</h4>
           ${pin}
         </div>
-          <time datetime="${it.date}">${(ANNOUNCE_ONLY && !isHighlight) ? PLACEHOLDER_TEXT : new Date(it.date).toLocaleDateString()}</time>
+          ${(ANNOUNCE_ONLY && !isHighlight) ? '' : `<time datetime="${it.date}">${new Date(it.date).toLocaleDateString()}</time>`}
           ${(ANNOUNCE_ONLY && !isHighlight) ? '' : `<p>${it.body||''}</p>`}
           ${(ANNOUNCE_ONLY && !isHighlight) ? '' : `<div class="row">${link}</div>`}
       `;
