@@ -101,13 +101,13 @@ body{
 
 /* Winners section */
 .winners{padding:3rem 0}
-.winners-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.2rem}
+.winners-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:1.4rem}
 .winner-card{
   background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)) padding-box,
              linear-gradient(135deg, rgba(255,215,0,.7), rgba(0,209,255,.6)) border-box;
   border:1px solid transparent; border-radius:16px; overflow:hidden; box-shadow:var(--shadow);
 }
-.winner-card img{display:block; width:100%; aspect-ratio:16/9; object-fit:cover; background:#0a0d11}
+.winner-card img{display:block; width:100%; aspect-ratio:4/3; object-fit:cover; background:#0a0d11}
 .winner-card .body{padding:.8rem}
 .winner-card .title{font-weight:800}
 .winner-card .place{color:#ffd700}
