@@ -61,6 +61,7 @@ function initGallerySlideshow(){
         img.src = src;
         img.alt = `Gallery image ${idx+1}`;
         img.loading = 'lazy';
+        img.decoding = 'async';
         s.appendChild(img);
         return s;
       });
@@ -77,6 +78,15 @@ function initGallerySlideshow(){
         const next = (current + 1) % slides.length;
         show(next);
       }, interval);
+
+      // keep slides centered on resize (object-fit:contain handles most; this triggers reflow)
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          slidesHost.style.transform = 'translateZ(0)'; // trigger paint
+        }, 100);
+      });
     });
 
   function resolveSource(i){
